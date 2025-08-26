@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abisai Lujan - Portfolio</title>
+
+    <!-- Fave Icon -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    
+    <!--Bootsrap CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Fixed navigation bar-->
+    <nav class = "navbar navbar-expand-lg sticky-top navbar-light py-3 border-bottom" style = "background-color: #e3f2fd">
+        <!--Nav bar container-->
+        <div class = "container-fluid">
+            <!--Brand logo (just my name)-->
+            <a class = "navbar-brand fw-bold" href="index.html">Abisai Lujan</a>
+            <!--For small displays, nav items will turn into this toggle dropdown button-->
+            <button class = "navbar-toggler" 
+                type = "button" 
+                data-bs-toggle = "collapse" 
+                data-bs-target="#navbarNavDropdown" 
+                aria-controls="navbarNavDropdown" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <!--3 line icon for the toggle dropdown button, when nav bar collapses-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Inner collapsable container for the nav items-->
+            <div class = "collapse navbar-collapse" id = "navbarNavDropdown">
+                <!--Start adding in nav items ; Margin (end, bottom, etc) spacing-->
+                <ul class = "navbar-nav ms-3 me-auto mb-2 mb-lg-0">
+                    <!--Home, scrolls to About Me section-->
+                    <li class = "nav-item">
+                        <a class = "nav-link active" aria-current="page" href="#about">Home</a>
+                    </li>
+                    <!--Projects dropdow nav item-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                        <!--Projects drop down options-->
+                        <ul class = "dropdown-menu" aria-labelledby="projectsDropdown">
+                            <li><a class="dropdown-item" href="#projects">Overview</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="data_analysis.html">Data Analysis</a></li>
+                            <li><a class="dropdown-item" href="machine_learning.html">Machine Learning</a></li>
+                            <li><a class="dropdown-item" href="data_visualization.html">Data Visualization</a></li>
+                        </ul>
+                    </li>
+
+                    <!--Stats Tutoring-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#learn_stats">Learn Statistics</a>
+                    </li>
+
+                    <!--Contact Me-->
+                    <li class = "nav-item"> <a class = "nav-link" href = "#contact">Contact Me</a></li>                   
+                </ul>
+
+            </div>
+        
+        
+        
+            <!--End of outer nav bar container-->
+        </div>
+    </nav>
+    
+    <!--Main container-->
+    <div id="main" class = "gap-x-16 mx-auto mt-12 grid grid-cols-[280px_1fr] w-[1280px] px-8 css-0">
+        
+
+
+    <!--End of Main container-->
+    </div>
+
+
+
+
+    <!--Bootstrap JS-->
+    <script src = "js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
